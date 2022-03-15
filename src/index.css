@@ -8,6 +8,7 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
+  background: #111;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
