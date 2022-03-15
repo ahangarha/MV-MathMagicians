@@ -24,10 +24,11 @@ export default class Calculator extends React.Component {
 
   render() {
     const { calcObj } = this.state;
+    const result = calcObj.next || calcObj.total;
     return (
       <div className="calculator-wrapper">
         <div className="result-section">
-          {Number(calcObj.total)}
+          {Number(result)}
         </div>
 
         <Button value="AC" onClick={this.onClick} />
