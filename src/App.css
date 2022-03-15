@@ -19,6 +19,7 @@
   padding: 1rem;
   background-color: #ddd;
   cursor: pointer;
+  border: none;
 }
 
 .calculator-wrapper .btn:hover {
