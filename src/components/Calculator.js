@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import calculate from '../logic/calculate';
 import Button from './Button';
 
@@ -8,12 +8,29 @@ export default function Calculator() {
     next: null,
     operation: null,
   });
+  const [math, setMath] = useState('hi');
 
   const onClick = (buttonName) => {
     setCalcObj({ ...calcObj, ...calculate(calcObj, buttonName) });
   };
 
-  const result = calcObj.next || calcObj.total;
+  useEffect(() => {
+    const { total, next, operation } = calcObj;
+
+    const newMath = [' '];
+    [total, operation, next].forEach((item) => {
+      if (item !== null) newMath.push(item);
+    });
+
+    // if we only have result, no math should be shown
+    if (newMath.length === 2 && total !== null) {
+      newMath.pop();
+    }
+
+    setMath(newMath.join(' '));
+  }, [calcObj]);
+
+  const result = calcObj.total || calcObj.next;
 
   const buttonsTitles = [
     'AC', '+/-', '%', '÷',
@@ -27,6 +44,7 @@ export default function Calculator() {
     <div className="calculator-wrapper">
       <div className="result-section">
         {Number(result)}
+        <div className="math">{math}</div>
       </div>
       {
         buttonsTitles.map((btnTitle) => (
