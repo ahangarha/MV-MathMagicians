@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button(props) {
-  const { value, onClick } = props;
-
+export default function Button({ value, onClick }) {
   let className = /[0-9.]/.test(value) ? 'btn' : 'btn btn-operation';
   className += value === '0' ? ' btn-0' : '';
 
