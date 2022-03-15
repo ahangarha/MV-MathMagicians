@@ -17,8 +17,10 @@ export default class Calculator extends React.Component {
 
   onClick(buttonName) {
     const { calcObj } = this.state;
+    const newCalcObj = { ...calcObj, ...calculate(calcObj, buttonName) };
+
     this.setState({
-      calcObj: calculate(calcObj, buttonName),
+      calcObj: newCalcObj,
     });
   }
 
