@@ -5,11 +5,18 @@
 }
 
 body {
-  display: grid;
-  place-content: center;
   height: 100vh;
+  min-height: 100vh;
   background: #111;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #eee;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
 }
