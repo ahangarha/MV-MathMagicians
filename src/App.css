@@ -1,4 +1,8 @@
 #tabs {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
   flex-grow: 1;
 }
 
