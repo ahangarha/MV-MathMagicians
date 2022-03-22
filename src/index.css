@@ -26,3 +26,9 @@ blockquote .quote-ref {
   text-align: end;
   font-style: italic;
 }
+
+.container {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+}

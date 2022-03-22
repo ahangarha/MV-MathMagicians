@@ -1,4 +1,4 @@
-header {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +8,7 @@ header {
 }
 
 header .branding {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   line-height: 1;
   margin: 0;
@@ -27,9 +27,18 @@ header nav a {
   padding: 2rem 0.5rem;
   color: #ddd;
   text-decoration: none;
-  font-size: 1.25rem;
 }
 
 header nav a:hover {
   background-color: #fff1;
+}
+
+@media (min-width: 768px) {
+  header .branding {
+    font-size: 2rem;
+  }
+
+  header nav a {
+    font-size: 1.25rem;
+  }
 }
