@@ -4,7 +4,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer>
-      This is a Free/Libre Software under
+      This is a Free/Libre Software under&nbsp;
       <a
         href="https://github.com/ahangarha/MV-MathMagicians/"
         target="_blank"

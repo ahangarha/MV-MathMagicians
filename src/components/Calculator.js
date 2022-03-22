@@ -50,8 +50,8 @@ export default function Calculator() {
         <p>
           Use this calculator to do basic math operation.
           If you find any issue or bug, please report it on
-          the project repository but opening a new
-          <a href="https://github.com/ahangarha/MV-MathMagicians/issues" target="_blank" rel="noopener noreferrer"> issue</a>
+          the project repository but opening a new&nbsp;
+          <a href="https://github.com/ahangarha/MV-MathMagicians/issues" target="_blank" rel="noopener noreferrer">issue</a>
           .
         </p>
       </div>

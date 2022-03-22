@@ -21,8 +21,8 @@ export default function Home() {
       </ul>
       <p>
         Use the navigation menu to explore the app. If you like the app, show
-        your support by adding start to the project on
-        <a href="https://github.com/ahangarha/MV-MathMagicians/"> GitHub</a>
+        your support by adding star to the project on&nbsp;
+        <a href="https://github.com/ahangarha/MV-MathMagicians/">GitHub</a>
         .
       </p>
     </>
