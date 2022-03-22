@@ -1,10 +1,13 @@
+header {
+  background-color: #000;
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ddd;
   padding-inline: 1rem;
-  background-color: #000;
 }
 
 header .branding {
