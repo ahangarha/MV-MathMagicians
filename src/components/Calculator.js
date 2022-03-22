@@ -48,9 +48,9 @@ export default function Calculator() {
           Let&apos;s do some math!
         </h2>
         <p>
-          Use this calculator to do basic math operation.
-          If you find any issue or bug, please report it on
-          the project repository but opening a new&nbsp;
+          Use this calculator to do basic math operations.
+          If you find any issue or bug, please report it to
+          the project repository by opening a new&nbsp;
           <a href="https://github.com/ahangarha/MV-MathMagicians/issues" target="_blank" rel="noopener noreferrer">issue</a>
           .
         </p>
