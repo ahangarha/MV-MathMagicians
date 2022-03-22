@@ -10,7 +10,11 @@ This is an educational project to make a calculator using Reactjs.
 
 ## Demo
 
-A live demo of this app can be seen [here](https://ahangarha-math.herokuapp.com/).
+A live demo of this app can be seen on
+[heroku](https://ahangarha-math.herokuapp.com/)
+and
+[netlify](https://ahangarha-math.netlify.app/)
+.
 
 ![Screenshot](./screenshot.png)
 
