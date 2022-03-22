@@ -10,7 +10,7 @@ This is an educational project to make a calculator using Reactjs.
 
 ## Demo
 
-A live demo of this app can be seen [here](https://ahangarha.github.io/MV-MathMagicians/).
+A live demo of this app can be seen [here](https://ahangarha-math.herokuapp.com/).
 
 ![Screenshot](./screenshot.png)
 
