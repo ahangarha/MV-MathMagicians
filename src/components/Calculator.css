@@ -21,6 +21,8 @@
   gap: 0.25rem;
   padding: 1rem;
   border: 1px solid #222;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .result-section {
