@@ -29,10 +29,20 @@ header nav a {
   display: inline-block;
   padding: 2rem 0.5rem;
   text-decoration: none;
+  position: relative;
 }
 
 header nav a:hover {
   background-color: #fff1;
+}
+
+header nav a.active::after {
+  content: '';
+  width: 100%;
+  border-bottom: 0.75rem solid #111;
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
 }
 
 @media (min-width: 768px) {
