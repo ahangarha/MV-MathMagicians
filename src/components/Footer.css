@@ -1,0 +1,9 @@
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #000;
+}
+
+footer a {
+  margin-inline: 0.25rem;
+}

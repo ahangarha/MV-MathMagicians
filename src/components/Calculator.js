@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import calculate from '../logic/calculate';
 import Button from './Button';
+import './Calculator.css';
 
 export default function Calculator() {
   const [calcObj, setCalcObj] = useState({
@@ -41,16 +42,30 @@ export default function Calculator() {
   ];
 
   return (
-    <div className="calculator-wrapper">
-      <div className="result-section">
-        {Number(result)}
-        <div className="math">{math}</div>
+    <div className="calculator-tab-wrapper">
+      <div className="calculator-info">
+        <h2>
+          Let&apos;s do some math!
+        </h2>
+        <p>
+          Use this calculator to do basic math operation.
+          If you find any issue or bug, please report it on
+          the project repository but opening a new
+          <a href="https://github.com/ahangarha/MV-MathMagicians/issues" target="_blank" rel="noopener noreferrer"> issue</a>
+          .
+        </p>
       </div>
-      {
-        buttonsTitles.map((btnTitle) => (
-          <Button value={btnTitle} onClick={onClick} key={btnTitle} />
-        ))
-      }
+      <div className="calculator-wrapper">
+        <div className="result-section">
+          {Number(result)}
+          <div className="math">{math}</div>
+        </div>
+        {
+          buttonsTitles.map((btnTitle) => (
+            <Button value={btnTitle} onClick={onClick} key={btnTitle} />
+          ))
+        }
+      </div>
     </div>
   );
 }

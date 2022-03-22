@@ -1,15 +1,38 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  display: grid;
-  place-content: center;
+  margin: 0;
   height: 100vh;
+  min-height: 100vh;
   background: #111;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #eee;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+}
+
+blockquote .quote-ref {
+  margin-top: 1rem;
+  display: block;
+  text-align: end;
+  font-style: italic;
+}
+
+.container {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+a {
+  color: #c77;
 }
