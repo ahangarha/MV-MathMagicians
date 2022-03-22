@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ddd;
+  padding-inline: 1rem;
+  background-color: #000;
+}
+
+header .branding {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 2rem 0.5rem;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+header nav a:hover {
+  background-color: #fff1;
+}
