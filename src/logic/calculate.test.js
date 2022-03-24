@@ -70,3 +70,35 @@ describe('Number buttons', () => {
     expect(result).toEqual(expected);
   });
 });
+
+describe('press =', () => {
+  test('with no previous input', () => {
+    const obj = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    const expected = {};
+
+    const result = calculate(obj, '=');
+
+    expect(result).toEqual(expected);
+  });
+
+  test('with previous input', () => {
+    const obj = {
+      total: '3',
+      next: '2',
+      operation: '+',
+    };
+    const expected = {
+      total: '5',
+      next: null,
+      operation: null,
+    };
+
+    const result = calculate(obj, '=');
+
+    expect(result).toEqual(expected);
+  });
+});
