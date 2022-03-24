@@ -45,3 +45,21 @@ describe('divide Operation', () => {
     expect(operate(2, 0, '÷')).toBe('Can\'t divide by 0.');
   });
 });
+
+describe('mod Operation', () => {
+  test('4 % 2 = 0', () => {
+    expect(operate(4, 2, '%')).toBe('0');
+  });
+
+  test('0 % 2 = 0', () => {
+    expect(operate(0, 2, '%')).toBe('0');
+  });
+
+  test('5 % 2 = 0', () => {
+    expect(operate(5, 2, '%')).toBe('1');
+  });
+
+  test('2 % 0 = Error Message', () => {
+    expect(operate(2, 0, '%')).toBe('Can\'t find modulo as can\'t divide by 0.');
+  });
+});
