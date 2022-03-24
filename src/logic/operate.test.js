@@ -63,3 +63,11 @@ describe('mod Operation', () => {
     expect(operate(2, 0, '%')).toBe('Can\'t find modulo as can\'t divide by 0.');
   });
 });
+
+describe('unknown Operation', () => {
+  test('Throw error on unknown operation', () => {
+    expect(() => {
+      operate(0, 0, 'U');
+    }).toThrowError('Unknown operation \'U\'');
+  });
+});
