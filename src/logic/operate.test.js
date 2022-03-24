@@ -32,3 +32,16 @@ describe('times Operation', () => {
     expect(operate(2, 0, '⨉')).toBe('0');
   });
 });
+describe('divide Operation', () => {
+  test('4 / 2 = 2', () => {
+    expect(operate(4, 2, '÷')).toBe('2');
+  });
+
+  test('0 / 2 = 0', () => {
+    expect(operate(0, 2, '÷')).toBe('0');
+  });
+
+  test('2 / 0 = Error Message', () => {
+    expect(operate(2, 0, '÷')).toBe('Can\'t divide by 0.');
+  });
+});
