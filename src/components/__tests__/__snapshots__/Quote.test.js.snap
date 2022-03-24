@@ -10,14 +10,3 @@ exports[`Renders correctly 1`] = `
   </span>
 </blockquote>
 `;
-
-exports[`has a heading 1`] = `
-<blockquote>
-  Mathematics is the most beautiful and most powerful creation of the human spirit.
-  <span
-    className="quote-ref"
-  >
-    — Stefan Banach, Polish mathematician
-  </span>
-</blockquote>
-`;
