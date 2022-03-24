@@ -35,3 +35,38 @@ describe('AC button', () => {
     expect(result).toEqual(expected);
   });
 });
+
+describe('Number buttons', () => {
+  test('press number no previous input', () => {
+    const obj = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    const expected = {
+      total: null,
+      next: '5',
+    };
+
+    const result = calculate(obj, '5');
+
+    expect(result).toEqual(expected);
+  });
+
+  test('press number no previous operation', () => {
+    const obj = {
+      total: null,
+      next: null,
+      operation: '+',
+    };
+    const expected = {
+      total: null,
+      next: '5',
+      operation: '+',
+    };
+
+    const result = calculate(obj, '5');
+
+    expect(result).toEqual(expected);
+  });
+});
