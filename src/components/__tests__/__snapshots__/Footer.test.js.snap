@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<footer>
+  This is a Free/Libre Software under 
+  <a
+    href="https://github.com/ahangarha/MV-MathMagicians/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    AGPL license
+  </a>
+  .
+</footer>
+`;

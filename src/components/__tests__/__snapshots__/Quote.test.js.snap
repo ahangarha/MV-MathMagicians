@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<blockquote>
+  Mathematics is the most beautiful and most powerful creation of the human spirit.
+  <span
+    className="quote-ref"
+  >
+    — Stefan Banach, Polish mathematician
+  </span>
+</blockquote>
+`;
